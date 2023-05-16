@@ -337,7 +337,18 @@ const Antd = () => {
     return (
         <>
             <Button onClick={() => addEdit("add", undefined)}>เพิ่ม</Button>
-            <TableTTT columns={columns} dataSource={data} />
+            <TableTTT columns={columns} dataSource={data}
+                // pagination={{
+                //     current: 5,
+                //     // total: 100,
+                //     pageSize: 1,
+                //     // showTotal: (total, range) => `ss ${total}`,
+                //     onChange: async (e, _limit) => {
+                //         console.log('e :>> ', e);
+                //         console.log('_limit :>> ', _limit);
+                //     }
+                // }}
+            />
 
             <Modal width={1000} centered open={isModalOpen} onOk={handleOk} onCancel={handleCancel} okText="เลือก" cancelText="ยกเลิก" >
                 <Descriptions bordered column={{ xxl: 1, xl: 1, lg: 1, md: 1, sm: 1, xs: 1 }} contentStyle={{ width: 700 }}>
