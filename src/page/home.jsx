@@ -1,11 +1,10 @@
 import { Button } from 'antd';
-import React from 'react'
+import React from 'react';
 
 const Home = () => {
-
     function openAllkons() {
-        window.open("http://demoallkonsfamily.allkons.com/sign-in?appid=70804335-f552-4035-9656-037509b63be0");
-        // window.focus();
+        const url = "http://demoallkonsfamily.allkons.com/sign-in?appid=e77267cc-eecf-4492-b21c-4358d97d38b4";
+        window.location.href = url;
     }
 
     return (

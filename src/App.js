@@ -10,7 +10,7 @@ const App = () => {
   const routes = useRoutes([
     { path: "/", element: <Home /> },
     { path: "/antd", element: <Antd /> },
-    { path: "allkons-id", element: <AllkonsID /> },
+    { path: "allconID", element: <AllkonsID /> },
   ]);
   return routes;
 };
